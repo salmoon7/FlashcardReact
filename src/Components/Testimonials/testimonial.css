@@ -1,0 +1,104 @@
+.testimonials-section {
+  background-color: #3d0066;
+  padding: 20px;
+  color: white;
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimonial {
+  background-color: #3d0066;
+  border: 6px solid white;
+  margin: 10px;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 300px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial::before {
+  content: "“";
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.testimonial::after {
+  content: "”";
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.testimonial p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+}
+
+.user-details img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.user-details h3,
+.user-details h4 {
+  margin: 0;
+}
+
+.user-details h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.user-details h4 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    max-width: 90%;
+  }
+
+  .user-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-details img {
+    margin: 0 0 10px 0;
+  }
+}

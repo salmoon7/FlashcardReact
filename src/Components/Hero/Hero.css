@@ -1,0 +1,116 @@
+/* src/components/Hero.css */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../Assets/hero.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.get-started-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #3d0066;
+  color: white;
+  text-decoration: none;
+  width: 40%;
+  transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #280046;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .hero-container {
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .get-started-btn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-content p {
+    font-size: 24px;
+  }
+
+  .get-started-btn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 24px;
+  }
+
+  .get-started-btn {
+    width: 80%;
+    padding: 15px;
+  }
+}

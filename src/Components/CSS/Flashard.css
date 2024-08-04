@@ -1,0 +1,130 @@
+.flashcards-container {
+  padding: 20px;
+  color: #fff; /* Text color */
+  background: #3d0066;
+  display: flex;
+  flex-direction: column;
+}
+
+.flashcards {
+  display: flex;
+}
+
+.header {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flashcard-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggleForm {
+  background: #fff;
+  color: #3d0066;
+  border: 1px #fff solid;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggleForm:hover {
+  background-color: #3d0066;
+  color: #fff;
+}
+
+.side-border {
+  border: #3d0066 solid 1px;
+  height: 20px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: darkgrey;
+  text-decoration: none;
+  width: 40%;
+  transition: background-color 0.3s;
+}
+
+.back-link:hover {
+  border: 1px #fff solid;
+}
+
+.flashcards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.category h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .category {
+    flex: 1 1 calc(50% - 20px);
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flashcards-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+    border-top: #fff 2px solid;
+  }
+
+  .flashcards {
+    flex-direction: column; /* Stack flashcards vertically on smaller screens */
+  }
+
+  .header {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+  .btns {
+    margin-bottom: 20px;
+  }
+  .toggleForm {
+    width: 100%; /* Make the button full-width on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .back-link {
+    width: 100%; /* Make the link full-width on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .category {
+    flex: 1 1 100%; /* Make categories full-width on smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .category h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}

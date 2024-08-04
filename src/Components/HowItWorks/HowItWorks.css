@@ -1,0 +1,84 @@
+/* src/components/HowItWorks.css */
+.how-it-works {
+  background: url("../Assets/works.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.how-it-works::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 0, 102, 0.7); /* Overlay color */
+  z-index: 1;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+}
+
+.step {
+  max-width: 200px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.step-number {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  background: #3d0066;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.highlight {
+  color: white;
+  background-color: #3d0066;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.steps .step:nth-child(1) {
+  animation: slide-in 0.5s forwards 0.5s;
+}
+
+.steps .step:nth-child(2) {
+  animation: slide-in 0.5s forwards 1s;
+}
+
+.steps .step:nth-child(3) {
+  animation: slide-in 0.5s forwards 1.5s;
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

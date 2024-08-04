@@ -1,0 +1,74 @@
+/* FlashcardList.css */
+
+.flashcard {
+  background-color: #ffffff; /* White background */
+
+  color: #3d0066; /* Dark purple text */
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  margin: 10px auto;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.flashcard-container {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flashcard:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0; /* Light grey on hover */
+}
+
+.flashcard-content {
+  position: relative;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.flashcard-content.flipped .answer {
+  display: block;
+}
+
+.question {
+  display: block;
+}
+
+.answer {
+  display: none;
+  color: #3d0066; /* Dark purple text */
+}
+
+.flashcards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between the cards */
+}
+.edit-icon {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.edit-icon:hover {
+  color: #000;
+}
+.start-quiz-button {
+  background: #3d0066;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 5px;
+}

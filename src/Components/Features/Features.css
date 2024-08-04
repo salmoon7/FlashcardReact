@@ -1,0 +1,144 @@
+/* src/components/Features.css */
+.features-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.features-container h2 {
+  font-size: 2rem;
+  color: #3d0066;
+  margin-bottom: 30px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+  width: 250px; /* Adjust width as necessary */
+  text-align: left;
+}
+
+.feature-icon {
+  width: 40px; /* Adjust size as necessary */
+  height: 40px; /* Adjust size as necessary */
+  margin-right: 15px;
+  background-color: #3d0066; /* Background color for better visibility */
+  padding: 5px;
+  border-radius: 50%; /* Circular background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.first-word {
+  color: white;
+  background-color: #3d0066;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .features-container {
+    padding: 30px 15px;
+  }
+
+  .features-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .feature-item {
+    width: 200px; /* Adjust width as necessary */
+  }
+
+  .feature-icon {
+    width: 35px; /* Adjust size as necessary */
+    height: 35px; /* Adjust size as necessary */
+  }
+
+  .feature-icon img {
+    width: 100%;
+  }
+
+  .first-word {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    padding: 20px 10px;
+  }
+
+  .features-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px 0;
+  }
+
+  .feature-icon {
+    width: 30px; /* Adjust size as necessary */
+    height: 30px; /* Adjust size as necessary */
+    margin-right: 10px;
+  }
+
+  .feature-icon img {
+    width: 100%;
+  }
+
+  .first-word {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-container {
+    padding: 15px 5px;
+  }
+
+  .features-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .feature-item {
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px 0;
+  }
+
+  .feature-icon {
+    width: 25px; /* Adjust size as necessary */
+    height: 25px; /* Adjust size as necessary */
+    margin-right: 10px;
+  }
+
+  .feature-icon img {
+    width: 100%;
+  }
+
+  .first-word {
+    font-size: 0.7rem;
+  }
+}
